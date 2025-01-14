@@ -1,0 +1,6 @@
+.popup-preview__image {
+  background-size: cover;
+  background-position: center;
+  max-height: 75vh;
+  max-width: 75vw;
+}

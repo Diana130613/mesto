@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="stylesheet" href="./pages/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto · Russia</title>
+</head>
+
+<body class="body">
+  <main class="page">
+
+    <header class="header">
+      <a href="#" class="header__link">
+        <img src="./images/logo.svg" alt="Место" class="header__logo">
+      </a>
+    </header>
+
+    <section class="profile">
+      <div class="profile__avatar"></div>
+      <div class="profile__info-panel">
+        <div class="profile__info">
+          <h1 class="profile__title">Жак-Ив Кусто</h1>
+          <button class="profile__button profile__button_edit" type="button"></button>
+          <p class="profile__subtitle">Исследователь океана</p>
+        </div>
+        <button class="profile__button profile__button_add"></button>
+      </div>
+    </section>
+
+    <ul class="elements"></ul>
+
+    <footer class="footer">
+      <p class="footer__info">&copy; 2024 Mesto Russia</p>
+    </footer>
+
+    <div class="popup popup_edit">
+      <div class="popup__container">
+        <p class="popup__title">Редактировать профиль</p>
+        <form class="popup__form popup__form_edit" name="form_edit" novalidate>
+
+          <input type="text" class="popup__input popup__input_edit_title" name="title" id="title" value="Жак-Ив Кусто" autocomplete="off" required minlength="2" maxlength="40">
+          <span id="title-error" class="popup__error"></span>
+
+          <input type="text" class="popup__input popup__input_edit_subtitle" name="subtitle" id="subtitle" value="Исследователь океана" autocomplete="off" required minlength="2" maxlength="200">
+          <span id="subtitle-error" class="popup__error"></span>
+
+          <button class="popup__button" type="submit">Сохранить</button>
+          <button type="reset" class="popup__close-button"></button>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup_add">
+      <div class="popup__container">
+        <p class="popup__title">Новое место</p>
+        <form class="popup__form popup__form_add" name="form_add" novalidate>
+
+          <input type="text" class="popup__input popup__input_add_title" name="card_title" id="card_title" placeholder="Название" autocomplete="off" required minlength="2" maxlength="30">
+          <span id="card_title-error" class="popup__error"></span>
+
+          <input type="url" class="popup__input popup__input_add_link" name="link" id="link" placeholder="Ссылка на картинку" autocomplete="off" required>
+          <span id="link-error" class="popup__error"></span>
+
+          <button class="popup__button popup__button_add popup__button_disabled" type="submit" disabled>Создать</button>
+          <button type="reset" class="popup__close-button popup__close-button_add" ></button>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="popup popup-preview">
+      <div class="popup-preview__container">
+        <img src="" alt="" class="popup-preview__image">
+        <button type="button" class="popup-preview__close-button"></button>
+        <p class="popup-preview__caption"></p>
+      </div>
+    </div>
+
+  </main>
+
+<template class="element-template">
+  <li class="element">
+    <img class="element__cover">
+    <button class="element__remove" type="button"></button>
+    <div class="element__info">
+      <h2 class="element__title"></h2>
+      <button type="button" class="element__like-button"></button>
+    </div>
+  </li>
+</template>
+<script type="module" src="./javascript/index.js"></script>
+</body>
+</html>

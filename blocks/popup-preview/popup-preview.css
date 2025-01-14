@@ -1,0 +1,21 @@
+@import url('./__image/popup-preview__image.css');
+@import url('./__caption/popup-preview__caption.css');
+@import url('./__close-button/popup-preview__close-button.css');
+
+.popup-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .5);
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s ease-out;
+}

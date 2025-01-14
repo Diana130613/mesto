@@ -1,0 +1,6 @@
+.popup__input_type_error {
+  border-bottom-color: #FF0000;
+}
+
+
+/* :not(:focus):not(:placeholder-shown) */

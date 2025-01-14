@@ -1,0 +1,8 @@
+.page {
+  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  max-width: 1280px;
+  min-width: 300px;
+  margin: 0 auto;
+}

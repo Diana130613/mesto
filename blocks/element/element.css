@@ -1,0 +1,17 @@
+@import url('./__cover/element__cover.css');
+@import url('./__info/element__info.css');
+@import url('./__like-button/element__like-button.css');
+@import url('./__like-button/_active/element__like-button_active.css');
+@import url('./__title/element__title.css');
+@import url('./__remove/element__remove.css');
+
+.element {
+  position: relative;
+  max-width: 282px;
+  min-height: 361px;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+  list-style-type: none;
+}
+

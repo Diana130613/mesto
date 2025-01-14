@@ -1,0 +1,16 @@
+.profile__avatar {
+  align-self: flex-start;
+  margin-right: 30px;
+  min-width: 120px;
+  min-height: 120px;
+  border-radius: 50%;
+  background-image: url(../../../images/kusto.jpg);
+  background-size: contain;
+}
+
+@media screen and (max-width: 640px) {
+  .profile__avatar {
+    align-self: center;
+    margin-right: 0;
+  }
+}

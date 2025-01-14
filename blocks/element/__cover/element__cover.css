@@ -1,0 +1,12 @@
+.element__cover {
+  height: 282px;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  background-position: center;
+  transition: opacity 200ms ease-in-out;
+}
+
+.element__cover:hover {
+  opacity: .8;
+}
